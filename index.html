@@ -27,9 +27,10 @@
 
   <body class="page__body">
     <header class="header">
-      <div class="header__top">
+      <div class="top-bar">
         <a href="#">
-          <img src="src/images/THE MET.png" alt="The MET">
+          <img src="src/images/THE MET.png" alt="The MET"
+           class="top-bar__logo">
         </a>
 
         <div class="header__icons">
@@ -45,23 +46,70 @@
     </header>
 
     <aside class="menu page__menu" id="menu">
-      <div class="menu__top">
+      <div class="top-bar">
         <a href="#">
-          <img src="src/images/THE MET.png" alt="The MET">
+          <img
+            src="src/images/THE MET.png"
+            alt="The MET"
+            class="top-bar__logo"
+          >
         </a>
 
         <a href="#" class="icon icon--close"></a>
-
       </div>
 
-      <a href="#">Home</a>
-      <a href="#about-us">about us</a>
-      <a href="#now-on-view">now on view</a>
-      <a href="#explore-online">explore online</a>
-      <a href="#contacts">contacts</a>
+      <div class="menu__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
 
-      <a href="tel:+1 212-535-7710" class="menu__phone-number">The Met Fifth Avenue</a>
-      <a href="tel:+1 212-923-3700" class="menu__call-in-order">The Met Cloisters</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#about-us">About Us</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#now-on-view">Now On View</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#explore-online">Explore Online</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu__contacts">
+          <div class="menu__contact-block">
+            <p class="menu__contact-title">The Met Fifth Avenue</p>
+            <a
+              href="tel:+12125357710"
+              class="menu__contact-phone"
+            >
+              +1 212-535-7710
+            </a>
+          </div>
+
+          <div class="menu__contact-block">
+            <p class="menu__contact-title">The Met Cloisters</p>
+            <a
+              href="tel:+12129233700"
+              class="menu__contact-phone"
+            >
+              +1 212-923-3700
+            </a>
+          </div>
+
+          <a href="tel:+12125357710" class="menu__call-button">
+            Call to Order
+          </a>
+        </div>
+      </div>
+
     </aside>
 
     <main class="main">
