@@ -1,10 +1,14 @@
-@import url(utils/variables.scss);
-@import url(utils/mixins.scss);
+@import './utils/variables';
+@import './utils/mixins';
 
-@import url(blocks/header.scss);
-@import url(blocks/top-bar.scss);
-@import url(blocks/nav.scss);
-@import url(blocks/menu.scss);
-@import url(blocks/icon.scss);
-@import url(blocks/page.scss);
-@import url(blocks/footer.scss);
+// separator for lint
+
+@import './blocks/header';
+@import './blocks/top-bar';
+@import './blocks/nav';
+@import './blocks/menu';
+@import './blocks/icon';
+@import './blocks/page';
+@import './blocks/footer';
+@import './blocks/section-title';
+@import './blocks/main.scss'
