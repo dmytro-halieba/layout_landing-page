@@ -118,7 +118,7 @@
 
     <main class="main">
       <section class="about-us" id="about-us">
-        <h2 class="section-title">Museum hours</h2>
+        <h2 class="section-title section-title--museum-hours">Museum hours</h2>
 
         <div class="about-us__content">
 
@@ -176,12 +176,100 @@
 
       <section class="contacts" id="contacts">
         <h2 class="section-title">Contact us</h2>
+
+        <div class="contacts__content">
+
+          <div class="contact-location contacts__location">
+            <h3 class="contact-location__name">The Met Fifth Avenue</h3>
+
+            <div class="contact-info contact-location__info">
+              <div class="contact-info__item">
+                <span class="contact-info__label">Phone</span>
+                <a href="tel:+12125357710" class="contact-info__value contact-info__phone">
+                  +1 212-535-7710
+                </a>
+              </div>
+
+              <div class="contact-info__item">
+                <span class="contact-info__label">Address</span>
+                <a href="https://maps.app.goo.gl/AVYLvQiE1bvQXhAh6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-info__value contact-info__address">
+                  1000 Fifth Avenue<br>
+                  New York, NY 10028
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-location contacts__location">
+            <h3 class="contact-location__name">The Met Cloisters</h3>
+
+            <div class="contact-info contact-location__info">
+              <div class="contact-info__item">
+                <span class="contact-info__label">Phone</span>
+                <a href="tel:+12129233700" class="contact-info__value contact-info__phone">
+                  +1 212-923-3700
+                </a>
+              </div>
+
+              <div class="contact-info__item">
+                <span class="contact-info__label">Address</span>
+                <a href="https://maps.app.goo.gl/uDJNfF9prbWM6wE97"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-info__value contact-info__address">
+                  99 Margaret Corbin Drive<br>
+                  Fort Tryon Park<br>
+                  New York, NY 10040
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacts__form-container">
+            <form class="contact-form contacts__form" id="contactForm">
+
+              <div class="contact-form__field">
+                <label for="name" class="contact-form__label">NAME</label>
+                <input type="text"
+                      id="name"
+                      name="name"
+                      class="contact-form__input"
+                      placeholder="e.g., John Smith"
+                      required>
+              </div>
+
+              <div class="contact-form__field">
+                <label for="email" class="contact-form__label">EMAIL</label>
+                <input type="email"
+                      id="email"
+                      name="email"
+                      class="contact-form__input"
+                      placeholder="e.g., john@example.com"
+                      required>
+              </div>
+
+              <div class="contact-form__field">
+                <label for="message" class="contact-form__label">MESSAGE</label>
+                <textarea id="message"
+                          name="message"
+                          class="contact-form__textarea"
+                          placeholder="e.g., I would like to ask about..."
+                          rows="4"
+                          required></textarea>
+              </div>
+
+              <button type="submit" class="contact-form__button">SEND</button>
+            </form>
+          </div>
+        </div>
       </section>
+
     </main>
 
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>
 
