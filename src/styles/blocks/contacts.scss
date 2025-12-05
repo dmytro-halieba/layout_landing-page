@@ -12,6 +12,7 @@
       grid-template-columns: repeat(12, 1fr);
       gap: 24px;
     }
+
     grid-auto-flow: column dense;
     row-gap: 48px;
   }
