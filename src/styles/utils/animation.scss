@@ -1,7 +1,6 @@
 .animation {
   &--photo-zoom {
-
-    transition: transform 1s;
+    transition: transform $transition-duration;
     transform-origin: center center;
 
     &:hover {
@@ -9,5 +8,19 @@
       z-index: 2;
     }
   }
+
+  &--button {
+  transition: background-color $transition-duration;
+
+  background-color: #D12D35;
+
+  &:hover {
+    background-color: #AE1C23;
+  }
+
+  &:active {
+    background-color: #EB343D;
+  }
+}
 
 }
