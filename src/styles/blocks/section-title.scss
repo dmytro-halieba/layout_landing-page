@@ -8,17 +8,20 @@
 
   margin-bottom: 48px;
 
-  @include on-tablet {
-    font-size: 48px;
-    grid-column: span 3;
-  }
-
-  @include on-desktop {
-    grid-column: span 5;
-  }
 
   &--museum-hours {
-    text-align: left;
+    @include on-tablet {
+      font-size: 48px;
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+
+    &--museum-hours {
+      text-align: left;
+    }
   }
 }
 

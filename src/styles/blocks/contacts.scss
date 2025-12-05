@@ -1,53 +1,76 @@
 .contacts {
 
-  &__location-name {
-    margin: 0;
-    margin-bottom: 16px;
-  }
-
-  &__info-item {
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
-  }
-
   &__content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 
-    gap: 48px;
+    @include on-tablet {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 24px;
+    }
+
+    @include on-desktop  {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+
+    row-gap: 48px;
   }
 
-  &__info-label {
-    font-weight: 400;
-    font-size: 14px;
+  &__location {
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 3;
+    }
+
+      &-name {
+        margin: 0 0 16px 0;
+      }
   }
 
-  &__info-value {
-    color: #3E3E3E;
-    text-decoration: none;
+  &__info {
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+
+      gap: 8px;
+    }
+
+      &-label {
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      &-value {
+        color: #3E3E3E;
+        text-decoration: none;
+      }
   }
 
+  &__form {
 
+    &-container {
+      display: flex;
+      flex-direction: column;
 
+        @include on-tablet {
+          grid-column: 4 / span 3;
+          grid-row: span 2;
+        }
 
+        @include on-desktop {
+          grid-column: 8 / span 5;
+          grid-row: auto;
+        }
+      }
 
-
-
-
-
-
-
-
-  &__form-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__form-field {
-    gap: 16px;
-  }
+      &-field {
+        gap: 16px;
+      }
+    }
 
   &__input,
   &__textarea {
