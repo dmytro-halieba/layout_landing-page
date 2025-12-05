@@ -32,10 +32,14 @@
 
     @include on-tablet {
       margin-top: 91px;
+      font-size: 64px;
+      line-height: 64px;
     }
 
     @include on-desktop {
       margin-top: 33px;
+      font-size: 80px;
+      line-height: 80px;
     }
   }
 }

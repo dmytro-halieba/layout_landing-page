@@ -1,6 +1,5 @@
 .nav {
   &__link {
-    display: block;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -9,6 +8,25 @@
     font-weight: 700;
     line-height: 22px;
     letter-spacing: 2px;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #fff;
+
+      transition: transform $transition-duration;
+      transform: scale(0);
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
   }
 
   &__list {

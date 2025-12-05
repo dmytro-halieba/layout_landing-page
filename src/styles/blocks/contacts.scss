@@ -73,6 +73,17 @@
       }
     }
 
+  &__input {
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+    &__textarea {
+      height: 144px;
+      margin-bottom: 16px;
+      resize: none;
+    }
+
   &__input,
   &__textarea {
     width: 100%;
@@ -87,6 +98,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #161616;
+
 
     &::placeholder {
       color: #7E7E83;
@@ -105,17 +117,6 @@
     &:not(:placeholder-shown) {
       color: #161616;
     }
-  }
-
-  &__input {
-    height: 48px;
-    margin-bottom: 16px;
-  }
-
-  &__textarea {
-    height: 144px;
-    margin-bottom: 16px;
-    resize: none;
   }
 
   &__button {
