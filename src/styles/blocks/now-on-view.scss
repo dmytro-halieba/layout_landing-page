@@ -85,6 +85,8 @@
 
     cursor: pointer;
 
+    grid-column: span 2;
+
     @include on-tablet {
       grid-column: 2 / 6;
     }
@@ -93,4 +95,9 @@
       grid-column: 5 / 9;
     }
   }
+
+  &--align-photo-top {
+      object-position: top;
+  }
 }
+

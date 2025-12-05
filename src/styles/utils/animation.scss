@@ -1,0 +1,13 @@
+.animation {
+  &--photo-zoom {
+
+    transition: transform 1s;
+    transform-origin: center center;
+
+    &:hover {
+      transform: scale(1.05);
+      z-index: 2;
+    }
+  }
+
+}
