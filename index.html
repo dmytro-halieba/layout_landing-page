@@ -361,7 +361,8 @@
           </div>
 
           <div class="contacts__form-container">
-            <form class="contacts__form" id="contactsForm">
+            <form class="contacts__form" id="contactsForm"
+             onsubmit="this.reset(); return false;">
               <div class="contacts__form-field">
                 <input type="text"
                       id="name"
