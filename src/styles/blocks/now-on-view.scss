@@ -26,6 +26,7 @@
     &--three-items {
       @media (max-width: $tablet-min-width) {
         --columns: 3;
+
         grid-template-columns: repeat(var(--columns), 1fr);
         column-gap: 8px;
       }
