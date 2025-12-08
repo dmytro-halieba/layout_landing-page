@@ -22,6 +22,14 @@
     @include page-grid;
 
     margin-bottom: 24px;
+
+    &--three-items {
+      @media (max-width: $tablet-min-width) {
+        --columns: 3;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        column-gap: 8px;
+      }
+    }
   }
 
   &__link {
